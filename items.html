@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cozmoz - Items</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .product-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+    .product-img {
+      object-fit: cover;
+      height: 220px;
+      width: 100%;
+    }
+    .product-body {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .product-title {
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .product-desc {
+      font-size: 0.9rem;
+      color: #555;
+      flex-grow: 1;
+    }
+    .product-price {
+      font-weight: 700;
+      color: #007bff;
+      margin-top: 15px;
+      font-size: 1.1rem;
+    }
+
+      /* Footer */
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 40px 0 20px;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .social-icons a {
+      color: #ccc;
+      margin-right: 15px;
+      font-size: 20px;
+    }
+    .newsletter input {
+      border: none;
+      border-radius: 0;
+    }
+    .footer-bottom {
+      border-top: 1px solid #444;
+      margin-top: 20px;
+      padding-top: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Cozmoz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="items.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Items Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Our Collection</h2>
+      <div class="row g-4">
+        <!-- Repeat product card for 18 items -->
+        <!-- Product 1 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Galaxy Vibes" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Galaxy Vibes</h5>
+              <p class="product-desc">Cosmic patterns blending vibrant colors and stellar design.</p>
+              <div class="product-price">$29.99</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Orbit Classic" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Orbit Classic</h5>
+              <p class="product-desc">Sleek minimalist orbit graphics for everyday style.</p>
+              <div class="product-price">$34.99</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Cosmic Fade" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Cosmic Fade</h5>
+              <p class="product-desc">Gradient fade inspired by nebulae and deep space colors.</p>
+              <div class="product-price">$32.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Star Trails" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Star Trails</h5>
+              <p class="product-desc">Dynamic trails that capture the night sky's movement.</p>
+              <div class="product-price">$28.50</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Lunar Glow" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Lunar Glow</h5>
+              <p class="product-desc">Subtle glow-in-the-dark moon phases design.</p>
+              <div class="product-price">$31.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Nebula Dreams" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Nebula Dreams</h5>
+              <p class="product-desc">Vivid colors and dreamy space art print.</p>
+              <div class="product-price">$33.99</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Meteor Shower" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Meteor Shower</h5>
+              <p class="product-desc">Shooting stars bursting across your tee.</p>
+              <div class="product-price">$29.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Solar Flare" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Solar Flare</h5>
+              <p class="product-desc">Fiery sun-inspired graphic with bold colors.</p>
+              <div class="product-price">$35.50</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 9 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Eclipse Shadow" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Eclipse Shadow</h5>
+              <p class="product-desc">Mysterious eclipse design with subtle details.</p>
+              <div class="product-price">$30.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 10 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Comet Tail" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Comet Tail</h5>
+              <p class="product-desc">Bold comet graphic trailing across the tee.</p>
+              <div class="product-price">$27.50</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 11 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Astro Wave" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Astro Wave</h5>
+              <p class="product-desc">Wave patterns inspired by space and stars.</p>
+              <div class="product-price">$31.99</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 12 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Stellar Burst" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Stellar Burst</h5>
+              <p class="product-desc">Explosive starburst pattern with vibrant colors.</p>
+              <div class="product-price">$34.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 13 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Moonlit Path" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Moonlit Path</h5>
+              <p class="product-desc">Tranquil night sky with a glowing path.</p>
+              <div class="product-price">$29.99</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 14 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Solar System" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Solar System</h5>
+              <p class="product-desc">Detailed planets arranged in harmony.</p>
+              <div class="product-price">$32.50</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 15 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Interstellar" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Interstellar</h5>
+              <p class="product-desc">Abstract space art with vibrant stars.</p>
+              <div class="product-price">$33.99</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 16 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Space Odyssey" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Space Odyssey</h5>
+              <p class="product-desc">Classic space journey inspired graphic.</p>
+              <div class="product-price">$30.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 17 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Celestial Glow" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Celestial Glow</h5>
+              <p class="product-desc">Soft glowing stars in a midnight blue sky.</p>
+              <div class="product-price">$31.50</div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 18 -->
+        <div class="col-md-4">
+          <div class="product-card">
+            <img src="tshirt.jpg" alt="Nebula Dreams" class="product-img" />
+            <div class="product-body">
+              <h5 class="product-title">Nebula Dreams</h5>
+              <p class="product-desc">Vibrant nebula-inspired cosmic art print.</p>
+              <div class="product-price">$34.99</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <h5>About Cozmoz</h5>
+          <p>We're a cosmic-themed streetwear brand, merging space aesthetics with everyday fashion. Join the journey.</p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="items.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Newsletter</h5>
+          <form class="newsletter" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your email" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 mb-4 text-center text-md-start">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center mt-4">
+        <p>&copy; 2025 Cozmoz. All rights reserved. | Designed in the stars ✨</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

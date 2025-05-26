@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cozmoz - About</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1b1a1a;
+      color: #eee;
+    }
+    .about-section {
+      padding: 60px 15px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .about-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #00bfff;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    .about-section p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #ccc;
+    }
+    .mission, .vision {
+      background: #121212;
+      padding: 30px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,191,255,0.2);
+    }
+    .mission h3, .vision h3 {
+      color: #00bfff;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    footer {
+      background-color: #222;
+      color: #eee;
+      padding: 40px 0;
+    }
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .social-icons a {
+      color: #ccc;
+      margin-right: 15px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Cozmoz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="items.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h1>About Cozmoz</h1>
+    <p>
+      Cozmoz is a cosmic-themed streetwear brand created for those who dare to dream beyond the stars.  
+      We blend the infinite beauty of the universe with urban fashion to craft unique apparel that tells a story — your story.
+    </p>
+
+    <div class="mission">
+      <h3>Our Mission</h3>
+      <p>
+        To inspire creativity and exploration through fashion, connecting people with the wonders of space and the cosmos.  
+        We aim to deliver high-quality, stylish, and meaningful designs that resonate with dreamers, thinkers, and rebels worldwide.
+      </p>
+    </div>
+
+    <div class="vision">
+      <h3>Our Vision</h3>
+      <p>
+        To become the leading brand in cosmic fashion, fostering a community of individuals passionate about space, science, and self-expression.  
+        We envision a future where everyone wears the universe with pride.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <h5>About Cozmoz</h5>
+          <p>We're a cosmic-themed streetwear brand, merging space aesthetics with everyday fashion. Join the journey.</p>
+        </div>
+        <div class="col-md-2 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="items.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4">
+          <h5>Newsletter</h5>
+          <form class="newsletter" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your email" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-3 mb-4 text-center text-md-start">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom text-center mt-4">
+        <p>&copy; 2025 Cozmoz. All rights reserved. | Designed in the stars ✨</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
